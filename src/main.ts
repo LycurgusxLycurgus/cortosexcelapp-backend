@@ -11,7 +11,7 @@ async function bootstrap() {
 
   //  Update the CORS origin
   app.enableCors({
-    origin: 'https://your-frontend-domain.vercel.app', // Replace with your Vercel domain
+    origin: 'https://cortosexcelapp-frontend.vercel.app/', // Replace with your Vercel domain
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
   });
