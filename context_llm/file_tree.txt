@@ -32,6 +32,7 @@ context_llm/
   context_llm/scripts/run_both.sh
   context_llm/scripts/script.txt
 ./
+  ./.env
   ./context_llm/all_code_one_file.txt
   ./context_llm/file_tree.txt
   ./context_llm/process_flow/llm_process_flow.txt
@@ -40,30 +41,11 @@ context_llm/
   ./context_llm/scripts/generate_file_tree.sh
   ./context_llm/scripts/run_both.sh
   ./context_llm/scripts/script.txt
-  ./dist/app.controller.d.ts
-  ./dist/app.module.d.ts
-  ./dist/app.service.d.ts
-  ./dist/auth/auth.controller.d.ts
-  ./dist/auth/auth.module.d.ts
-  ./dist/auth/auth.service.d.ts
-  ./dist/auth/jwt.strategy.d.ts
-  ./dist/auth/local.strategy.d.ts
-  ./dist/common/decorators/is-strong-password.decorator.d.ts
-  ./dist/main.d.ts
-  ./dist/notes/notes.controller.d.ts
-  ./dist/notes/notes.module.d.ts
-  ./dist/notes/notes.service.d.ts
-  ./dist/prisma.service.d.ts
-  ./dist/topics/topics.controller.d.ts
-  ./dist/topics/topics.module.d.ts
-  ./dist/topics/topics.service.d.ts
-  ./dist/users/users.controller.d.ts
-  ./dist/users/users.module.d.ts
-  ./dist/users/users.service.d.ts
   ./nest-cli.json
-  ./node_modules/.package-lock.json
-  ./package-lock.json
   ./package.json
+  ./prisma/migrations/20240818201233_init/migration.sql
+  ./prisma/migrations/20240820121343_update_to_topics/migration.sql
+  ./prisma/schema.prisma
   ./README.md
   ./src/app.controller.spec.ts
   ./src/app.controller.ts
