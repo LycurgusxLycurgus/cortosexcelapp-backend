@@ -7,6 +7,7 @@ src/
   src/auth/auth.controller.ts
   src/auth/auth.module.ts
   src/auth/auth.service.ts
+  src/auth/google.strategy.ts
   src/auth/jwt.strategy.ts
   src/auth/local.strategy.ts
   src/common/decorators/is-strong-password.decorator.ts
@@ -45,6 +46,7 @@ context_llm/
   ./package.json
   ./prisma/migrations/20240818201233_init/migration.sql
   ./prisma/migrations/20240820121343_update_to_topics/migration.sql
+  ./prisma/migrations/20240822194523_add_google_auth_fields/migration.sql
   ./prisma/schema.prisma
   ./README.md
   ./src/app.controller.spec.ts
@@ -54,6 +56,7 @@ context_llm/
   ./src/auth/auth.controller.ts
   ./src/auth/auth.module.ts
   ./src/auth/auth.service.ts
+  ./src/auth/google.strategy.ts
   ./src/auth/jwt.strategy.ts
   ./src/auth/local.strategy.ts
   ./src/common/decorators/is-strong-password.decorator.ts
