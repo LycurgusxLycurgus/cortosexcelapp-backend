@@ -8,11 +8,13 @@ datasource db {
 }
 
 model User {
-  id       Int      @id @default(autoincrement())
-  username String   @unique
-  password String
-  topics   Topic[]
-  createdAt DateTime @default(now())
+  id            Int      @id @default(autoincrement())
+  username      String   @unique
+  password      String?
+  email         String?  @unique
+  googleId      String?  @unique
+  topics        Topic[]
+  createdAt     DateTime @default(now())
 }
 
 model Topic {
