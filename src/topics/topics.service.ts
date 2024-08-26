@@ -57,7 +57,13 @@ export class TopicsService {
   async findAll(includeArchived: boolean = false) {
     return this.prisma.topic.findMany({
       where: includeArchived ? {} : { archived: false },
-      include: { user: { select: { username: true } } },
+      include: {
+        user: { select: { username: true } },
+        comments: {
+          include: { user: { select: { username: true } } },
+          orderBy: { createdAt: 'desc' },
+        },
+      },
       orderBy: [
         { discussed: 'asc' },
         { priority: 'asc' },
